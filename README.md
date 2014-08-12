@@ -5,7 +5,7 @@ Get code
 ------------
 $ git clone http://github.com/cfaessler/python-travis-build-lamp
 $ aptitude install python-pip
-$ pip install python/requirements.txt
+$ pip install -r python/requirements.txt
 
 Setup init script
 -------------------
