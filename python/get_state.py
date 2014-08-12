@@ -12,13 +12,13 @@ import sys
 query_interval = 60
 device = '/dev/ttyUSB0'
 travis_urls = ["http://api.travis-ci.org/repos/strongswan/strongTNC",
-               "http://api.travis-ci.org/repos/strongswan/swidGenerator",
-		"http://api.travis-ci.org/repos/latin-language-toolkit/arethusa"]
+               "http://api.travis-ci.org/repos/strongswan/swidGenerator"]
 
 # Time to settle
 time.sleep(3)
 serial_port = serial.Serial(device, 9600)
 serial_port.setDTR(False)
+
 
 def print_status(message):
     time_string = time.strftime("%H:%M:%S")
