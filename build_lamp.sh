@@ -16,7 +16,7 @@ PIDFILE=/var/run/$NAME.pid
 case "$1" in
   start)
     echo "Starting $NAME deamon"
-    PID=$(python $SCRIPT_PATH/$SCRIPT_NAME.py > /dev/null & echo $!)
+    PID=$(python $SCRIPT_PATH/$SCRIPT_NAME > /dev/null & echo $!)
     if [ -z $PID ]; then
         echo "Starting $NAME deamon failed"
     else
