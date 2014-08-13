@@ -29,7 +29,7 @@ while True:
     try:
         build_failed = False
         for repo in travis_urls:
-            print_status("Querying  Repository %s..." % repo)
+            print_status("Querying repository %s..." % repo)
             response = requests.get(repo)
             data = response.json()
             last_result = data['last_build_result']
